@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest  xmlns:android="http://schemas.android.com/apk/res/android"
+ android:versionCode="5" android:versionName="1.4" package="cz.rozkovec.android">
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN">
+	</uses-permission>
+	<uses-permission android:name="android.permission.BLUETOOTH">
+	</uses-permission>
+	<uses-permission android:name="android.permission.VIBRATE">
+	</uses-permission>
+	<uses-permission android:name="android.permission.WAKE_LOCK">
+	</uses-permission>
+	<uses-permission android:name="android.permission.INTERNET">
+	</uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE">
+	</uses-permission>
+	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="13">
+	</uses-sdk>
+	<application android:theme="@android:0103000C" android:label="@7F060001" android:icon="@7F02006C">
+		<activity android:theme="@android:0103000D" android:name=".SelectConnectionActivity" android:screenOrientation="1" android:configChanges="0x000000A0">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN">
+				</action>
+				<category android:name="android.intent.category.LAUNCHER">
+				</category>
+			</intent-filter>
+		</activity>
+		<activity android:theme="@android:0103000D" android:name=".DashboardActivity" android:screenOrientation="1" android:configChanges="0x000000A0">
+		</activity>
+		<activity android:theme="@android:0103000D" android:name=".PairedDevicesActivity">
+		</activity>
+		<activity android:theme="@android:0103000B" android:label="@7F060011" android:name=".DeviceSearchActivity" android:configChanges="0x000000A0">
+		</activity>
+		<activity android:theme="@android:01030006" android:name=".control.MouseActivity">
+		</activity>
+		<activity android:theme="@android:0103000D" android:name=".control.KeyboardActivity" android:windowSoftInputMode="0x00000025">
+		</activity>
+		<activity android:theme="@android:0103000D" android:name=".control.MultimediaActivity">
+		</activity>
+		<activity android:theme="@android:0103000D" android:name=".control.PresentationActivity">
+		</activity>
+		<activity android:theme="@android:0103000D" android:name=".control.PowerActivity">
+		</activity>
+		<activity android:label="@7F060007" android:name=".preference.GeneralPreferences">
+		</activity>
+		<activity android:label="@7F060051" android:name=".preference.MousePreferences">
+		</activity>
+		<activity android:label="@7F060053" android:name=".preference.MultimediaPreferences">
+		</activity>
+		<activity android:label="@7F060055" android:name=".preference.PresentationPreferences">
+		</activity>
+		<activity android:theme="@android:0103000B" android:name=".HowToConnectActivity" android:configChanges="0x00000020">
+		</activity>
+		<activity android:theme="@android:0103000D" android:name=".MinitutorialActivity">
+		</activity>
+		<activity android:theme="@android:0103000D" android:name=".PromotionProductActivity" android:screenOrientation="1">
+		</activity>
+		<activity android:name="com.markupartist.android.widget.ActionBar">
+		</activity>
+		<activity android:name=".widget.SeekBarPreference">
+		</activity>
+		<activity android:name="com.google.ads.AdActivity" android:configChanges="0x00000FB0">
+		</activity>
+		<service android:name=".connection.ServiceRemoteConnection">
+		</service>
+	</application>
+</manifest>
